@@ -1,0 +1,15 @@
+NEST API
+pnpx create-nx-workspace bluesea --workspaceType integrated
+pnpm add -D @nx/nest
+pnpx nx generate @nx/nest:app apps/nest-api
+pnpx nx serve nest-api
+
+VUE APP
+pnpm add @nx/vue
+pnpx nx generate @nx/vue:app apps/vue-app
+pnpm add -D @typescript-eslint/parser -w
+pnpm add -D @typescript-eslint/parser -w
+pnpx nx serve vue-app
+
+SHARED UTILS
+pnpx nx g @nx/js:library shared-utils
