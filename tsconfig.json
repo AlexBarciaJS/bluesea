@@ -11,6 +11,9 @@
     },
     {
       "path": "./apps/vue-app"
+    },
+    {
+      "path": "./shared-utils"
     }
   ]
 }

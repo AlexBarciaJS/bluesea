@@ -175,6 +175,8 @@ importers:
 
   apps/vue-app: {}
 
+  shared-utils: {}
+
 packages:
 
   '@adobe/css-tools@4.3.3':
