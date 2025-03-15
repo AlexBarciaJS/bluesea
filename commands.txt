@@ -8,7 +8,7 @@ VUE APP
 pnpm add @nx/vue
 pnpx nx generate @nx/vue:app apps/vue-app
 pnpm add -D @typescript-eslint/parser -w
-pnpm add -D @typescript-eslint/parser -w
+pnpm add pinia bootstrap -F vue-app
 pnpx nx serve vue-app
 
 SHARED UTILS

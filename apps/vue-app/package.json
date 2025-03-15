@@ -1,5 +1,9 @@
 {
   "name": "@bluesea/vue-app",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "pinia": "^3.0.1"
+  }
 }

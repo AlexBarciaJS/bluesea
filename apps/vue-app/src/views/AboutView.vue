@@ -1,16 +1,20 @@
+<script setup lang="ts">
+import { useMainStore } from '../store';
+
+const store = useMainStore();
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="container mt-5">
+    <h1 class="text-primary">
+      Hello Vue 3 + TypeScript + Bootstrap 5
+    </h1>
+    <p>Counter: {{ store.counter }}</p>
+    <button
+      class="btn btn-primary"
+      @click="store.increment"
+    >
+      Increment
+    </button>
   </div>
 </template>
-
-<style>
-@media (min-width: 768px) {
-  .about {
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem;
-  }
-}
-</style>
