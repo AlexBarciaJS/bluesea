@@ -45,5 +45,11 @@
         }
       }
     }
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.42",
+    "@langchain/ollama": "^0.2.0",
+    "@langchain/openai": "^0.4.4",
+    "@nestjs/config": "^4.0.1"
   }
 }
