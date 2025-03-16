@@ -1,15 +1,13 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ChatCoreModule } from './chat-core/chat-core.module';
 import { ConfigModule } from '@nestjs/config';
-import { ChatGeneralModule } from './chat-general/chat-general.module';
+import { PineconeDbModule } from './pinecone-db/pinecone-db.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
-    ChatCoreModule,
-    ChatGeneralModule
+    PineconeDbModule,
   ],
   controllers: [AppController],
   providers: [AppService],
