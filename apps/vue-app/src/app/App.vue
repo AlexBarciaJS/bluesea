@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router';
   <header>
     <nav>
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/about">Chat</RouterLink>
     </nav>
   </header>
   <RouterView />
@@ -22,6 +22,16 @@ nav > a {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+input {
+  border-width: thin;
+  border-color: gray;
+  border-radius: 5px;
+ }
+
+ button {
+  margin: 10px 0;
+ }
 
 @media (min-width: 768px) {
   header {
